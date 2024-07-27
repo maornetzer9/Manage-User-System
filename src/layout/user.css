@@ -1,0 +1,178 @@
+.user-container {
+    margin: 50px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: padding 0.5s;
+    width: 100%; 
+    font-size: 20px;
+}
+
+.user-container.open {
+    padding: 40px;
+}
+
+.user-inner-card {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.user-card {
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+    box-shadow: 1px 1px 2px 1px black;
+    border-radius: 20px;
+    padding: 50px;
+    gap: 15px;
+    width: 100%;
+    max-width: 90%; 
+    box-sizing: border-box;
+}
+
+.user-card-active {
+    background-color: #e9e7e73a;
+}
+
+.click-animate {
+    font-size: 12px;
+    margin: 10px;
+    display: inline-block;
+    animation: oscillate 2s ease-in-out infinite;
+}
+
+.buttons-container, button {
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+.more-details {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    opacity: 0;
+    height: 0;
+    margin: 10px;
+    transition: all 2s;
+}
+
+.more-details.open {
+    opacity: 1;
+    height: auto; 
+}
+
+.user-details-form {
+    display: flex;
+    margin-left: 50px;
+}
+
+/* Click Animate */
+@keyframes oscillate {
+    0% {
+        scale: calc(1);
+        transform: rotate(4deg);
+    }
+    40% {
+        scale: calc(1.1);
+        transform: rotate(-4deg);
+    }
+    100% {
+        scale: calc(1);
+        transform: rotate(4deg);
+    }
+}
+
+@media (max-width: 1200px) {
+    .user-container {
+        margin: 40px;
+    }
+
+    .user-card {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .user-container {
+        margin: 30px;
+    }
+
+    .user-card {
+        padding: 30px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .user-container {
+        margin: 20px;
+        font-size: 18px;
+    }
+
+    .user-container.open {
+        padding: 0px;
+    }
+
+    .user-card {
+        flex-direction: column;
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    .click-animate {
+        font-size: 10px;
+    }
+
+    .buttons-container, button {
+        margin-right: 3px;
+        margin-bottom: 15px;
+    }
+
+    .more-details {
+        gap: 20px;
+    }
+
+    .user-details-form {
+        display: flex;
+        margin: 40px;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    .user-container {
+        font-size: 16px;
+    }
+
+    .user-container.open {
+        padding: 0px;
+    }
+
+    .user-card {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .buttons-container, button {
+        margin-right: 2px;
+        margin-bottom: 10px;
+    }
+
+    .more-details {
+        gap: 15px;
+    }
+
+
+    .user-details-form {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

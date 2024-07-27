@@ -1,0 +1,172 @@
+.todos-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px 1px black;
+    margin-left: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.todos-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.todo-item {
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 2px 1px black;
+}
+
+.todo-item ul {
+    list-style-type: none;
+    margin: 20px;
+    padding: 0;
+}
+
+.todo-item li {
+    padding: 10px 5px;
+}
+
+.todo-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.todo-icons-container {
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.todo-icons-container .button {
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: none;
+    box-shadow: 1px 1px 2px 1px #52dc4b;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.todo-icons-container .button.completed {
+    border: none;
+    box-shadow: 1px 1px 2px 1px red;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .todos-container {
+        width: 50%;
+        margin-left: 15px;
+    }
+
+    .todos-header {
+        padding: 15px;
+    }
+
+    .todo-item {
+        padding: 8px;
+        margin-bottom: 15px;
+    }
+
+    .todo-item ul {
+        margin: 15px;
+    }
+
+    .todo-item li {
+        padding: 8px 4px;
+    }
+
+    .todo-icons-container .button {
+        padding: 4px 8px;
+    }
+}
+
+@media (max-width: 992px) {
+    .todos-container {
+        width: 60%;
+        margin-left: 10px;
+    }
+
+    .todos-header {
+        padding: 12px;
+    }
+
+    .todo-item {
+        padding: 7px;
+        margin-bottom: 12px;
+    }
+
+    .todo-item ul {
+        margin: 12px;
+    }
+
+    .todo-item li {
+        padding: 7px 3px;
+    }
+
+    .todo-icons-container .button {
+        padding: 3px 7px;
+    }
+}
+
+@media (max-width: 768px) {
+    .todos-container {
+        width: 80%;
+        margin-left: 5px;
+    }
+
+    .todos-header {
+        padding: 10px;
+    }
+
+    .todo-item {
+        padding: 6px;
+        margin-bottom: 10px;
+    }
+
+    .todo-item ul {
+        margin: 10px;
+    }
+
+    .todo-item li {
+        padding: 6px 2px;
+    }
+
+    .todo-icons-container .button {
+        padding: 2px 6px;
+    }
+}
+
+@media (max-width: 576px) {
+    .todos-container {
+        width: 90%;
+        height: fit-content;
+        margin-left: 0;
+    }
+
+    .todos-header {
+        padding: 8px;
+    }
+
+    .todo-item {
+        padding: 0px;
+        margin-bottom: 8px;
+    }
+
+    .todo-item ul {
+        margin: 8px;
+    }
+
+    .todo-item li {
+        padding: 5px 1px;
+    }
+
+    .todo-icons-container .button {
+        padding: 1px 5px;
+    }
+}
